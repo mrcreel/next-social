@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/mrcreel/next-social/compare/v0.1.3...v0.1.4) (2024-12-17)
+
+
+### Features
+
+* **navbar:** add SearchBar ([423e861](https://github.com/mrcreel/next-social/commit/423e861d2dd7977a27e0e73129c2f1730d2fb5ce))
+
 ### [0.1.3](https://github.com/mrcreel/next-social/compare/v0.1.2...v0.1.3) (2024-12-17)
 
 
