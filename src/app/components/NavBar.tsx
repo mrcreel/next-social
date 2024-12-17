@@ -49,8 +49,6 @@ const NavBar = () => {
             <span className="">Stories</span>
           </Link>
         </div>
-        <div className=""></div>
-        <div className=""></div>
       </div>
       {/* RIGHT */}
       <div className="flex w-[30%] items-center gap-4 xl:gap-8 justify-end">
