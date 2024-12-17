@@ -15,6 +15,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.9.3",
     "babel-plugin-react-compiler": "19.0.0-beta-201e55d-20241215",
     "eslint-config-next": "^15.1.0",
     "next": "15.1.1-canary.7",

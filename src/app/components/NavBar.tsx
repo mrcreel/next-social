@@ -4,10 +4,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import MobileMenu from './MobileMenu'
+import {
+  ClerkLoaded,
+  ClerkLoading,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 
 const NavBar = () => {
   return (
-    <div className="bg-yellow-300 h-24 flex items-center justify-between">
+    <div className="h-24 flex items-center justify-between">
       {/* LEFT */}
       <div className="md:hidden lg:block w-[20%]">
         <Link href="/" className="font-bold text-xl text-blue-600">
@@ -52,6 +59,44 @@ const NavBar = () => {
       </div>
       {/* RIGHT */}
       <div className="flex w-[30%] items-center gap-4 xl:gap-8 justify-end">
+        <ClerkLoading>
+          <div className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-gray-500 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white" />
+        </ClerkLoading>
+        <ClerkLoaded>
+          <SignedIn>
+            <div className="cursor-pointer">
+              <Image
+                src="/people.png"
+                alt="profile image"
+                height={20}
+                width={20}
+              />
+            </div>
+            <div className="cursor-pointer">
+              <Image
+                src="/messages.png"
+                alt="messages"
+                height={20}
+                width={20}
+              />
+            </div>
+            <div className="cursor-pointer">
+              <Image
+                src="/notifications.png"
+                alt="notifications"
+                height={20}
+                width={20}
+              />
+            </div>
+            <UserButton />
+          </SignedIn>
+          <SignedOut>
+            <div className="flex items-center gap-2 text-sm">
+              <Image src="/login.png" alt="Login" height={20} width={20} />
+              <Link href="/sign-in">LogIn/Register</Link>
+            </div>
+          </SignedOut>
+        </ClerkLoaded>
         <MobileMenu />
       </div>
     </div>
