@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/mrcreel/next-social/compare/v0.1.2...v0.1.3) (2024-12-17)
+
+
+### Features
+
+* **auth:** setup Clerk to handle sign up/in/out ([4ea2e59](https://github.com/mrcreel/next-social/commit/4ea2e599884d07799263c0d557710ba56cd7b981))
+* **navbar:** create links ([a2cf2ec](https://github.com/mrcreel/next-social/commit/a2cf2ec191992208e6898ddf4cc8682eafdecc5e))
+
 ### [0.1.2](https://github.com/mrcreel/next-social/compare/v0.1.1...v0.1.2) (2024-12-17)
 
 
