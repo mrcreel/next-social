@@ -3,7 +3,7 @@ import React from 'react'
 
 const AddPost = () => {
   return (
-    <div className="bg-white p-4 rounded-lg flex gap-4 justify-between text-sm">
+    <div className="bg-white p-4 rounded-lg flex gap-4 justify-between text-sm shadow-md">
       {/* AVATAR */}
       <Image
         src="https://images.pexels.com/photos/29666174/pexels-photo-29666174/free-photo-of-abstract-geometric-stained-glass-windows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
