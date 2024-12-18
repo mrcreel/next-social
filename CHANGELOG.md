@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/mrcreel/next-social/compare/v0.1.4...v0.1.5) (2024-12-18)
+
+
+### Features
+
+* **homepage:** add list of stories ([d226045](https://github.com/mrcreel/next-social/commit/d226045917d3d27ae3c93a3d0827207ee5404934))
+* **homepage:** create AddPost component ([10ec455](https://github.com/mrcreel/next-social/commit/10ec4555cc963fb5cddb2193b411d98dc969df85))
+
 ### [0.1.4](https://github.com/mrcreel/next-social/compare/v0.1.3...v0.1.4) (2024-12-17)
 
 
