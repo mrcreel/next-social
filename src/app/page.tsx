@@ -9,11 +9,11 @@ const Homepage = () => {
   return (
     <div className="flex gap-6 pt-6">
       {/* LEFT */}
-      <div className="bg-slate-300 hidden xl:block w-[20%]">
+      <div className="hidden w-[20%] xl:block">
         <LeftMenu />
       </div>
       {/* CENTER */}
-      <div className="bg-slate-300 w-full lg:w-[70%] xl:w-[50%]">
+      <div className="w-full lg:w-[70%] xl:w-[50%]">
         <div className="flex flex-col gap-6">
           <Stories />
           <AddPost />
@@ -21,7 +21,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* RIGHT */}
-      <div className="bg-gray-300 hidden lg:block w-[30%]">
+      <div className="hidden w-[30%] lg:block">
         <RightMenu />
       </div>
     </div>
