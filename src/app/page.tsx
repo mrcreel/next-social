@@ -1,4 +1,3 @@
-import React from 'react'
 import LeftMenu from './components/LeftMenu'
 import RightMenu from './components/RightMenu'
 import Stories from './components/Stories'
