@@ -65,13 +65,6 @@ const Comments = () => {
             </div>
           </div>
           {/* ICON */}
-          {/* <Image
-            src="/more.png"
-            alt="more"
-            height={16}
-            width={16}
-            className="bg-teal-300"
-          /> */}
           <div className="h-4 w-4 cursor-pointer">
             <Image
               src="/more.png"
