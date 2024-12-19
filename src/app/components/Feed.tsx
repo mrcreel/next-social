@@ -1,9 +1,8 @@
-import React from 'react'
 import Post from './Post'
 
 const Feed = () => {
   return (
-    <div className="bg-white p-4 rounded-lg flex flex-col gap-12 justify-between text-sm shadow-md">
+    <div className="flex flex-col justify-between gap-12 rounded-lg bg-white p-4 text-sm shadow-md">
       <Post />
       <Post />
       <Post />

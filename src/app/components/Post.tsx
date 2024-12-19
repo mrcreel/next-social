@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import React from 'react'
+
+import Comments from './Comments'
 
 const Post = () => {
   return (
     <div className="flex flex-col gap-4">
       {/* USER */}
-      <div className="bg-cyan-200 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           {/* Avatar */}
           <Image
@@ -22,12 +23,12 @@ const Post = () => {
       </div>
       {/* DESCRIPTIOM */}
       <div className="flex flex-col gap-4">
-        <div className="w-full min-h-96 relative">
+        <div className="relative min-h-96 w-full">
           <Image
             fill
             src="https://images.pexels.com/photos/25785496/pexels-photo-25785496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400&h=250&fit=crop&crop=focalpoint"
             alt="more"
-            className="object-cover rounded-md"
+            className="rounded-md object-cover"
           />
         </div>
         <p className="">
@@ -38,9 +39,9 @@ const Post = () => {
         </p>
       </div>
       {/* INTERACTION */}
-      <div className="flex items-center justify-between my-4 text-sm">
+      <div className="my-4 flex items-center justify-between text-sm">
         <div className="flex gap-8">
-          <div className="bg-slate-50 flex gap-4 items-center p-2 rounded-xl">
+          <div className="flex items-center gap-4 rounded-xl bg-slate-50 p-2">
             <Image
               src="/like.png"
               alt="like"
@@ -54,7 +55,7 @@ const Post = () => {
               <span className="hidden md:inline"> Likes</span>
             </span>
           </div>
-          <div className="bg-slate-50 flex gap-4 items-center p-2 rounded-xl">
+          <div className="flex items-center gap-4 rounded-xl bg-slate-50 p-2">
             <Image
               src="/comment.png"
               alt="comment"
@@ -70,7 +71,7 @@ const Post = () => {
           </div>
         </div>
         <div className="">
-          <div className="bg-slate-50 flex gap-4 items-center p-2 rounded-xl">
+          <div className="flex items-center gap-4 rounded-xl bg-slate-50 p-2">
             <Image
               src="/share.png"
               alt="share"
@@ -86,6 +87,7 @@ const Post = () => {
           </div>
         </div>
       </div>
+      <Comments />
     </div>
   )
 }
