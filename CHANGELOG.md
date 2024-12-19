@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/mrcreel/next-social/compare/v0.1.6...v0.1.7) (2024-12-19)
+
+
+### Features
+
+* **homepage-right-menu:** created FriendRequest component ([2e9b44a](https://github.com/mrcreel/next-social/commit/2e9b44aa729b638d64658b843d0e92a3536ca4e6))
+* **homepage:** create birthdays component for tight menu on main page ([e02c7cf](https://github.com/mrcreel/next-social/commit/e02c7cfca4cf2509a8b8441ccc0973b0be8ee0ae))
+
 ### [0.1.6](https://github.com/mrcreel/next-social/compare/v0.1.5...v0.1.6) (2024-12-19)
 
 
