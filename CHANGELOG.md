@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/mrcreel/next-social/compare/v0.1.5...v0.1.6) (2024-12-19)
+
+
+### Features
+
+* **feed:** added comments to Post ([29b26d7](https://github.com/mrcreel/next-social/commit/29b26d7a73d8aa97686dd3258be8f854d37dacd6))
+* **homepage:** hard code posts into HomePage ([785a8d5](https://github.com/mrcreel/next-social/commit/785a8d5c64150998acbefdc8631ae66eea509dea))
+
+
+### Bug Fixes
+
+* **eslint:** fix config ([90f275e](https://github.com/mrcreel/next-social/commit/90f275ef5398165f53ce7d57ed4612ddbb21bd55))
+
 ### [0.1.5](https://github.com/mrcreel/next-social/compare/v0.1.4...v0.1.5) (2024-12-18)
 
 
