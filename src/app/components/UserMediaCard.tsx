@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const UserMediaCard = ({ userId }: { userId: string }) => {
@@ -9,6 +10,73 @@ const UserMediaCard = ({ userId }: { userId: string }) => {
         <Link href="/" className="text-xs text-blue-500">
           See All
         </Link>
+      </div>
+      {/* BOTTOM */}
+      <div className="flex flex-wrap justify-between gap-4">
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative h-24 w-1/5">
+          <Image
+            src="https://images.pexels.com/photos/16552374/pexels-photo-16552374/free-photo-of-woman-leaning-head-on-hand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="media"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </div>
   )
