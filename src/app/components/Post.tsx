@@ -26,6 +26,7 @@ const Post = () => {
         <div className="relative min-h-96 w-full">
           <Image
             fill
+            sizes="(max-width: 640px) 640px, 100vw"
             src="https://images.pexels.com/photos/25785496/pexels-photo-25785496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400&h=250&fit=crop&crop=focalpoint"
             alt="more"
             className="rounded-md object-cover"

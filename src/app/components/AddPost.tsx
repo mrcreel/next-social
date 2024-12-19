@@ -18,7 +18,7 @@ const AddPost = () => {
           <textarea
             className="flex-1 rounded-lg bg-slate-100 p-2"
             name=""
-            id=""
+            id="addPost"
             placeholder="What's on your mind?"
           />
           <Image
