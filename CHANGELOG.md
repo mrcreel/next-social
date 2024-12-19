@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/mrcreel/next-social/compare/v0.1.7...v0.1.8) (2024-12-19)
+
+
+### Features
+
+* **homepage:** create area for ads in right side menu ([5306b92](https://github.com/mrcreel/next-social/commit/5306b9297a6d49e8576d3c52747599438ff372dd))
+
 ### [0.1.7](https://github.com/mrcreel/next-social/compare/v0.1.6...v0.1.7) (2024-12-19)
 
 
