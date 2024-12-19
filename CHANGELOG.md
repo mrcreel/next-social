@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/mrcreel/next-social/compare/v0.1.8...v0.1.9) (2024-12-19)
+
+
+### Features
+
+* **profile page:** created UserInfo card ([958e962](https://github.com/mrcreel/next-social/commit/958e962ea1a70470250a5acba0b8e72640697f48))
+* **profile:** created UserMedia card ([e893584](https://github.com/mrcreel/next-social/commit/e89358462b43cb5c6980a7730c4eb6e904deee90))
+
 ### [0.1.8](https://github.com/mrcreel/next-social/compare/v0.1.7...v0.1.8) (2024-12-19)
 
 
