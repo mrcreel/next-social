@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/mrcreel/next-social/compare/v0.1.9...v0.1.10) (2024-12-20)
+
+
+### Features
+
+* **left menu:** add profile card to homepage left menu ([59ca817](https://github.com/mrcreel/next-social/commit/59ca8176c9930a89f8da920e63581792506c52a9))
+* **prfile page:** add profile card to top of profile page ([34e0868](https://github.com/mrcreel/next-social/commit/34e0868a5b03d4b0bb837be3f84e1ed5aafb9fc1))
+
 ### [0.1.9](https://github.com/mrcreel/next-social/compare/v0.1.8...v0.1.9) (2024-12-19)
 
 
