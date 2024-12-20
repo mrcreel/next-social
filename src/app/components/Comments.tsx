@@ -16,7 +16,7 @@ const Comments = () => {
           <input
             type="text"
             name=""
-            id="writeComment"
+            id=""
             placeholder="Write a comment..."
             className="flex-1 bg-transparent outline-none"
           />
