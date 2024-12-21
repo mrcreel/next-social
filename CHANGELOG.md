@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/mrcreel/next-social/compare/v0.1.10...v0.1.11) (2024-12-21)
+
+
+### Features
+
+* **prisma:** set up prisma to connect to a  mongoDB ([f3154a6](https://github.com/mrcreel/next-social/commit/f3154a692ddef723c8f52dfed8c293fbb49e6162))
+
 ### [0.1.10](https://github.com/mrcreel/next-social/compare/v0.1.9...v0.1.10) (2024-12-20)
 
 
