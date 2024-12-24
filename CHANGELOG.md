@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/mrcreel/next-social/compare/v0.1.11...v0.1.12) (2024-12-24)
+
+
+### Features
+
+* **clerk:** create webook to store new nsers in mongodb ([fb29e23](https://github.com/mrcreel/next-social/commit/fb29e23a3b38b975cda5ba9ebd9b253fe0687018))
+* **prisma:** set up prisma to connect to a  mongoDB ([0947b85](https://github.com/mrcreel/next-social/commit/0947b85313881e7e56fc7ea09ab9780a680572f1))
+* **userinfocard:** fetch user profile data ([5b44cc2](https://github.com/mrcreel/next-social/commit/5b44cc2c30c04f394279156c051d15fc0d88bf1d))
+* **userinfocard:** fetch user profile from database ([a38523f](https://github.com/mrcreel/next-social/commit/a38523f24eec51ca2bdd3b3f4158245c2330f475))
+
 ### [0.1.11](https://github.com/mrcreel/next-social/compare/v0.1.10...v0.1.11) (2024-12-21)
 
 
