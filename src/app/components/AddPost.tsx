@@ -6,7 +6,6 @@ const AddPost = async () => {
   'add server'
 
   const { userId } = await auth()
-  console.log(userId)
 
   const testAction = async (formData: FormData) => {
     'use server'
@@ -23,8 +22,6 @@ const AddPost = async () => {
           deleted: false,
         },
       })
-
-      console.log(res)
     } catch (error) {
       console.log(error)
     }

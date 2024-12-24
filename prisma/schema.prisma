@@ -17,6 +17,7 @@ model User {
   id             String          @id @default(auto()) @map("_id") @db.ObjectId
   userId         String          @unique @db.String
   userName       String          @unique @db.String
+  description    String?
   profileImage   String?
   avatarImage    String?
   email          String?         @unique @db.String
@@ -25,6 +26,7 @@ model User {
   lastName       String?
   location       String?
   work           String?
+  school         String?
   website        String?
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
@@ -107,7 +109,6 @@ model FollowRequest {
 
 model Block {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId  String   @unique @default(cuid()) @db.String
   sender     User     @relation("blockSender", fields: [senderId], references: [userId])
   senderId   String   @db.String
   receiver   User     @relation("blockReceiver", fields: [receiverId], references: [userId])
