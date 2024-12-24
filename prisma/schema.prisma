@@ -22,7 +22,7 @@ model User {
   email          String?         @unique @db.String
   phoneNunmber   String?         @unique @db.String
   firstName      String?
-  LastName       String?
+  lastName       String?
   location       String?
   work           String?
   website        String?
@@ -56,14 +56,15 @@ model Like {
 model Post {
   id        String    @id @default(auto()) @map("_id") @db.ObjectId
   postId    String    @unique @default(cuid()) @db.String
-  body      String
+  postBody  String
   user      User      @relation(fields: [userId], references: [userId])
   userId    String    @db.String
   likes     Like[]
   comments  Comment[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-  deleted   DateTime
+  deleted   Boolean   @default(false)
+  deletedAt DateTime?
 }
 
 model Comment {
