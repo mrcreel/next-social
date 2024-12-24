@@ -17,14 +17,16 @@ model User {
   id             String          @id @default(auto()) @map("_id") @db.ObjectId
   userId         String          @unique @db.String
   userName       String          @unique @db.String
+  description    String?
   profileImage   String?
   avatarImage    String?
   email          String?         @unique @db.String
   phoneNunmber   String?         @unique @db.String
   firstName      String?
-  LastName       String?
+  lastName       String?
   location       String?
   work           String?
+  school         String?
   website        String?
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
@@ -56,14 +58,15 @@ model Like {
 model Post {
   id        String    @id @default(auto()) @map("_id") @db.ObjectId
   postId    String    @unique @default(cuid()) @db.String
-  body      String
+  postBody  String
   user      User      @relation(fields: [userId], references: [userId])
   userId    String    @db.String
   likes     Like[]
   comments  Comment[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-  deleted   DateTime
+  deleted   Boolean   @default(false)
+  deletedAt DateTime?
 }
 
 model Comment {
@@ -106,7 +109,6 @@ model FollowRequest {
 
 model Block {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId  String   @unique @default(cuid()) @db.String
   sender     User     @relation("blockSender", fields: [senderId], references: [userId])
   senderId   String   @db.String
   receiver   User     @relation("blockReceiver", fields: [receiverId], references: [userId])

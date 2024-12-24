@@ -1,7 +1,14 @@
+import { User } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const UserInfoCard = ({ userId }: { userId: string }) => {
+const UserInfoCard = ({ user }: { user: User }) => {
+  const createdAtDate = new Date(user.createdAt)
+  const formattedDate = createdAtDate.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
   return (
     <div className="flex flex-col gap-4 rounded-lg bg-white p-4 text-sm shadow-md">
       {/* TOP */}
@@ -14,78 +21,86 @@ const UserInfoCard = ({ userId }: { userId: string }) => {
       {/* BOTTOM */}
       <div className="flex flex-col gap-4 text-gray-500">
         <div className="flex items-center gap-2">
-          <span className="text-xl text-black">Rosie Porter</span>
-          <span className="text-sm">rosie1234</span>
-        </div>
-        <p className="">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </p>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/map.png"
-            alt="city"
-            height={16}
-            width={16}
-            className=""
-          />
-          <span className="">
-            Living in <b>McHenry</b>
+          <span className="text-xl text-black">
+            {user.firstName && user.lastName
+              ? `${user.firstName} ${user.lastName}`
+              : user.userName}
           </span>
+          <span className="text-sm">{user.userName}</span>
         </div>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/school.png"
-            alt="school"
-            height={16}
-            width={16}
-            className=""
-          />
-          <span className="">
-            Went to <b>Stone High</b>
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/work.png"
-            alt="work"
-            height={16}
-            width={16}
-            className=""
-          />
-          <span className="">
-            Works at <b>No where</b>
-          </span>
-        </div>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-1">
+        {user.description && <p className="">{user.description}</p>}
+        {user.location && (
+          <div className="flex items-center gap-2">
             <Image
-              src="/link.png"
-              alt="website"
+              src="/map.png"
+              alt="city"
               height={16}
               width={16}
               className=""
             />
-            <Link
-              href="http://localhost:3000"
-              className="font-medium text-blue-500"
-            >
-              localhost:3000
-            </Link>
+            <span className="">
+              Living in <b>{user.location}</b>
+            </span>
           </div>
-          <div className="flex items-center gap-1">
+        )}
+        {user.school && (
+          <div className="flex items-center gap-2">
             <Image
-              src="/date.png"
-              alt="date joined"
+              src="/school.png"
+              alt="school"
               height={16}
               width={16}
               className=""
             />
-            <span className="text-sm">Joined Dec 2024</span>
+            <span className="">
+              Went to <b>{user.school}</b>
+            </span>
           </div>
+        )}
+        {user.work && (
+          <div className="flex items-center gap-2">
+            <Image
+              src="/work.png"
+              alt="work"
+              height={16}
+              width={16}
+              className=""
+            />
+            <span className="">
+              Works at <b>{user.work}</b>
+            </span>
+          </div>
+        )}
+        {user.website && (
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1">
+              <Image
+                src="/link.png"
+                alt="website"
+                height={16}
+                width={16}
+                className=""
+              />
+              <Link href={user.website} className="font-medium text-blue-500">
+                {user.website?.split('//')[1]}
+              </Link>
+            </div>
+          </div>
+        )}
+        <div className="flex items-center gap-1">
+          <Image
+            src="/date.png"
+            alt="date joined"
+            height={16}
+            width={16}
+            className=""
+          />
+          <span className="text-sm">Joined {formattedDate}</span>
         </div>
         <button className="rounded-md bg-blue-500 p-2 text-sm text-white">
           Follow
         </button>
+
         <span className="cursor-pointer self-end text-xs text-red-400">
           Block User
         </span>

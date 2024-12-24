@@ -1,7 +1,8 @@
+import { User } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const UserMediaCard = ({ userId }: { userId: string }) => {
+const UserMediaCard = ({ user }: { user: User }) => {
   return (
     <div className="flex flex-col gap-4 rounded-lg bg-white p-4 text-sm shadow-md">
       {/* TOP */}
