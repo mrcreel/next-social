@@ -84,7 +84,6 @@ model Comment {
 
 model Follow {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId   String   @unique @default(cuid()) @db.String
   follower    User     @relation("userFollows", fields: [followerId], references: [userId])
   followerId  String   @db.String
   following   User     @relation("userFollowing", fields: [followingId], references: [userId])
@@ -95,7 +94,6 @@ model Follow {
 
 model FollowRequest {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId  String   @unique @default(cuid()) @db.String
   sender     User     @relation("followSender", fields: [senderId], references: [userId])
   senderId   String   @db.String
   receiver   User     @relation("followReceiver", fields: [receiverId], references: [userId])
