@@ -22,14 +22,14 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.1.4",
     "@clerk/clerk-react": "^5.21.0",
+    "@clerk/nextjs": "^5.1.4",
     "@clerk/shared": "^2.20.4",
     "@prisma/client": "6.1.0",
     "babel-plugin-react-compiler": "19.0.0-beta-201e55d-20241215",
     "prisma": "^6.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "19.0.0-rc-cd22717c-20241013",
+    "react-dom": "19.0.0-rc-cd22717c-20241013",
     "svix": "^1.44.0",
     "swr": "^2.3.0"
   },
@@ -49,7 +49,7 @@
     "globals": "^15.13.0",
     "husky": "9.1.7",
     "lint-staged": "15.2.11",
-    "next": "15.1.1-canary.7",
+    "next": "15.0.0-rc.1",
     "postcss": "^8",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
