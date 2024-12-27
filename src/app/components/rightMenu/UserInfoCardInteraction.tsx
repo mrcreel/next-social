@@ -25,6 +25,13 @@ const UserInfoCardInteraction = ({
   const follow = async () => {
     try {
       await switchFollow(userId)
+
+      setUserState((prev) => ({
+        ...prev,
+        following: prev.following && false,
+        followRequested:
+          !prev.following && !prev.followRequested ? true : false,
+      }))
     } catch (error) {
       console.log(error)
     }
@@ -32,7 +39,7 @@ const UserInfoCardInteraction = ({
 
   return (
     <>
-      <form action="" className="">
+      <form action={follow} className="">
         <button className="w-full rounded-md bg-blue-500 p-2 text-white">
           {userState.following
             ? 'Following'
