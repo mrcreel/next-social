@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/mrcreel/next-social/compare/v0.1.13...v0.1.14) (2024-12-27)
+
+
+### Bug Fixes
+
+* **clerk:** downgrade @clerk/nextjs to 5.1.4 ([24965cf](https://github.com/mrcreel/next-social/commit/24965cf8bfeb0c34a69a2938c14f65038fa105fe))
+
 ### [0.1.13](https://github.com/mrcreel/next-social/compare/v0.1.12...v0.1.13) (2024-12-27)
 
 
