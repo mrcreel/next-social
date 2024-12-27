@@ -22,8 +22,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.1.4",
     "@clerk/clerk-react": "^5.21.0",
-    "@clerk/nextjs": "^6.9.3",
     "@clerk/shared": "^2.20.4",
     "@prisma/client": "6.1.0",
     "babel-plugin-react-compiler": "19.0.0-beta-201e55d-20241215",
