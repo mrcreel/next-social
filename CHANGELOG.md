@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.15](https://github.com/mrcreel/next-social/compare/v0.1.14...v0.1.15) (2024-12-27)
+
+
+### Features
+
+* **react:** upgrade react to v19-rc ([fc4344b](https://github.com/mrcreel/next-social/commit/fc4344b4ab2eb682b3c2009c1b8dad0b325135ca))
+
 ### [0.1.14](https://github.com/mrcreel/next-social/compare/v0.1.13...v0.1.14) (2024-12-27)
 
 
