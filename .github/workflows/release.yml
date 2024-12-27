@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Run release
-        run: npx semantic-release
+        run: pnpm release
