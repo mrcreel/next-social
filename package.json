@@ -2,9 +2,7 @@
   "name": "soci-start",
   "version": "0.1.20",
   "private": true,
-   "repository": {
-    "url": "https://github.com/mrcreel/next-social"
-  },
+  "repository": "https://github.com/mrcreel/next-social",
   "engines": {
     "node": ">=21.0.0",
     "pnpm": ">=9.0.0"
