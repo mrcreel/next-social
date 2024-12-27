@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/mrcreel/next-social/compare/v0.1.16...v0.1.17) (2024-12-27)
+
+
+### Features
+
+* **git:** add GH_TOKEN and update .github/workflows/release.yml ([5d25a64](https://github.com/mrcreel/next-social/commit/5d25a64b2c0424e0f17724b61c1cf59476511c06))
+
 ### [0.1.16](https://github.com/mrcreel/next-social/compare/v0.1.15...v0.1.16) (2024-12-27)
 
 
