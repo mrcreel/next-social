@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.18](https://github.com/mrcreel/next-social/compare/v0.1.17...v0.1.18) (2024-12-27)
+
+
+### Bug Fixes
+
+* **git:** fix .github/workflows/release.ymsteps to remove pnpm and add npml ([9a46e96](https://github.com/mrcreel/next-social/commit/9a46e964d7b9730a40335a123767c6a73ed0352b))
+
 ### [0.1.17](https://github.com/mrcreel/next-social/compare/v0.1.16...v0.1.17) (2024-12-27)
 
 
