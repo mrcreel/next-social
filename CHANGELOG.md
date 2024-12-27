@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.19](https://github.com/mrcreel/next-social/compare/v0.1.18...v0.1.19) (2024-12-27)
+
+
+### Bug Fixes
+
+* **workflows:** change Run release step to npx semantic-release ([40eede4](https://github.com/mrcreel/next-social/commit/40eede442656bd522fd9fb48a737fda6073ee2b5))
+
 ### [0.1.18](https://github.com/mrcreel/next-social/compare/v0.1.17...v0.1.18) (2024-12-27)
 
 
