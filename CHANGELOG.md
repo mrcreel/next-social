@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.27](https://github.com/mrcreel/next-social/compare/v0.1.26...v0.1.27) (2024-12-27)
+
+
+### Bug Fixes
+
+* **workflows:** move GH_TOKEN to Run release step ([1f97afc](https://github.com/mrcreel/next-social/commit/1f97afc42f4126586ba44e9aeca989a9205ca161))
+
 ### [0.1.26](https://github.com/mrcreel/next-social/compare/v0.1.25...v0.1.26) (2024-12-27)
 
 
