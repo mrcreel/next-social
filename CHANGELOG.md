@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/mrcreel/next-social/compare/v0.1.12...v0.1.13) (2024-12-27)
+
+
+### Features
+
+* **user-info-card:** test whether user is looking at a profile that has blocked or followed them ([2a5c68f](https://github.com/mrcreel/next-social/commit/2a5c68ffc67f7fccf49b7d4760bdc7607f512365))
+* **user-info-card:** update follow status on click of button ([e2afc3b](https://github.com/mrcreel/next-social/commit/e2afc3bb3a5cdc0cf7ca9b4ec47085615f18b5fd))
+
+
+### Bug Fixes
+
+* **swr:** upgrade swr to ^2.3.0 ([825cd69](https://github.com/mrcreel/next-social/commit/825cd69c7997e569897a51633bfc195ea915e68e))
+
 ### [0.1.12](https://github.com/mrcreel/next-social/compare/v0.1.11...v0.1.12) (2024-12-24)
 
 
