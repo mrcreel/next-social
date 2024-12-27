@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/mrcreel/next-social/compare/v0.1.25...v0.1.26) (2024-12-27)
+
+
+### Bug Fixes
+
+* **release.yml:** change order of steps ([1c87a04](https://github.com/mrcreel/next-social/commit/1c87a04fba684cd276ba5ba807c9dda2f6fb248c))
+
 ### [0.1.25](https://github.com/mrcreel/next-social/compare/v0.1.20...v0.1.25) (2024-12-27)
 
 
