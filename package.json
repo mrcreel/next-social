@@ -6,6 +6,13 @@
     "node": ">=21.0.0",
     "pnpm": ">=9.0.0"
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "clerk"
+      ]
+    }
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -15,13 +22,16 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.21.0",
     "@clerk/nextjs": "^6.9.3",
+    "@clerk/shared": "^2.20.4",
     "@prisma/client": "6.1.0",
     "babel-plugin-react-compiler": "19.0.0-beta-201e55d-20241215",
     "prisma": "^6.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "svix": "^1.44.0"
+    "svix": "^1.44.0",
+    "swr": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

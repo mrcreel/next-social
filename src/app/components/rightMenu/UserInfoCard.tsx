@@ -1,14 +1,50 @@
+import prisma from '@/lib/client'
+import { auth } from '@clerk/nextjs/server'
 import { User } from '@prisma/client'
 import Image from 'next/image'
 import Link from 'next/link'
+import UserInfoCardInteraction from './UserInfoCardInteraction'
 
-const UserInfoCard = ({ user }: { user: User }) => {
+const UserInfoCard = async ({ user }: { user: User }) => {
   const createdAtDate = new Date(user.createdAt)
   const formattedDate = createdAtDate.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
   })
+
+  let isUserBlocked = false
+  let isFollowing = false
+  let isFollowRequested = false
+
+  const { userId: currentUserId } = await auth()
+
+  if (currentUserId) {
+    const blockRes = await prisma.block.findFirst({
+      where: {
+        senderId: currentUserId,
+        receiverId: user.id,
+      },
+    })
+    if (blockRes) return (isUserBlocked = true)
+
+    const followRes = await prisma.follow.findFirst({
+      where: {
+        followerId: currentUserId,
+        followingId: user.id,
+      },
+    })
+    if (followRes) return (isFollowing = true)
+
+    const followRequestRes = await prisma.followRequest.findFirst({
+      where: {
+        senderId: currentUserId,
+        receiverId: user.id,
+      },
+    })
+    if (followRequestRes) return (isFollowRequested = true)
+  }
+
   return (
     <div className="flex flex-col gap-4 rounded-lg bg-white p-4 text-sm shadow-md">
       {/* TOP */}
@@ -97,13 +133,13 @@ const UserInfoCard = ({ user }: { user: User }) => {
           />
           <span className="text-sm">Joined {formattedDate}</span>
         </div>
-        <button className="rounded-md bg-blue-500 p-2 text-sm text-white">
-          Follow
-        </button>
-
-        <span className="cursor-pointer self-end text-xs text-red-400">
-          Block User
-        </span>
+        <UserInfoCardInteraction
+          userId={user.id}
+          currentUserId={currentUserId}
+          isUserBlocked={isUserBlocked}
+          isFollowing={isFollowing}
+          isFollowRequested={isFollowRequested}
+        />
       </div>
     </div>
   )

@@ -84,7 +84,7 @@ model Comment {
 
 model Follow {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId   String   @unique @default(cuid()) @db.String
+  followId    String   @unique @default(cuid()) @db.String
   follower    User     @relation("userFollows", fields: [followerId], references: [userId])
   followerId  String   @db.String
   following   User     @relation("userFollowing", fields: [followingId], references: [userId])
@@ -94,15 +94,16 @@ model Follow {
 }
 
 model FollowRequest {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  commentId  String   @unique @default(cuid()) @db.String
-  sender     User     @relation("followSender", fields: [senderId], references: [userId])
-  senderId   String   @db.String
-  receiver   User     @relation("followReceiver", fields: [receiverId], references: [userId])
-  receiverId String   @db.String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  deleted    DateTime
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  followResuestId String    @unique @default(cuid()) @db.String
+  sender          User      @relation("followSender", fields: [senderId], references: [userId])
+  senderId        String    @db.String
+  receiver        User      @relation("followReceiver", fields: [receiverId], references: [userId])
+  receiverId      String    @db.String
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  deleted         Boolean   @default(false)
+  deletedAt       DateTime?
 
   @@unique([senderId, receiverId])
 }
