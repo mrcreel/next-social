@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.21](https://github.com/mrcreel/next-social/compare/v0.1.20...v0.1.21) (2024-12-27)
+
+
+### Bug Fixes
+
+* **git:** uopdate package.json and release.yml ([244179b](https://github.com/mrcreel/next-social/commit/244179b50f6efde34f04085dcf555a3a35ac1f12))
+
 ### [0.1.20](https://github.com/mrcreel/next-social/compare/v0.1.19...v0.1.20) (2024-12-27)
 
 
